@@ -3,26 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introducción a HTML</title>
+    <title>Clase 02-10-2024 Intro HTML</title>
 </head>
-<body>
-    <h1>Definición de una página web</h1>
+<body bgcolor="white">
+    <h1>Definición de Página Web</h1>
     <ul>
-        <li>Una pagina web, lo podemos definir com un documento de texto con marcas o etiquetas</li>
-        <li>Estas etiquetas, lo que permiten, es presentar info al usuario: texto, imagenes, videos, fotos ,etc</li>
-        <li>Las marcas se le llaman etiquetas,  y NO es un leguaje de programacion como Java o Python</li>
-        <li>Estan pensadas para que sean vistas a través de programas qe se llaman <b>navegadores web</b></li>
-        <li>Los navegadores web se encargan de interpretar estas marcas con el fin de los usuarios las puedan visualizar y ver su contenido</li>
+        <li>Una página web, lo podemos definir como un docuemnto de texto con marcar o etiquetas.</li>
+        <li>Estas etiquetas, lo que permiten, es presentar información al usuario: texto, imágenes, vídeos, fotos, etc.</li>
+        <li>Las marcas se le llaman etiquetas, y NO ES UN LENGUAJE DE PROGRAMACIÓN COMO PODRÍA SER JAVA, PYTHON</li>
+        <li>Están pensadas para que sean vistas a través de programas que se llaman <b>navegadores web</b></li>
+        <li>Los navegadores web, se encargan por lo tanto de interpretar estas marcas con el fin de que los usuarios
+            <br>podamos visualizarlas y ver su contenido.
+        </li>
     </ul>
-    <h1>Definición de HTML</h1>
-        EL acrónimo HTML viene del nombre <b>Hypertext Markup Language</b>, es decir, Lenguaje de Marcado de Hipertexto <br>
-        Quiere decir que las paginas web son un conjunto de paginas con etiquetas que estan vinculadas entre ellas <br>
-        Mediante hiperenlaces o hipervinculos
-    <ul>
-        <li>Que la estructura de HTMK viene definida por la <b>W3Consortium</b></li>
-        <li>Pueden aglutinar textos, audios, videos, tablas, imagenes, etc. que podemos combinrlos a nuestro <br>
-            gusto. Además, permite insertar enlaces a otras paginas por medio de hiperenlaces.</li>
-        <li>Para Que una página web se considre como tal tiene que tener una extensión que sea <b>.html</b></li>
-    </ul>
-</body>
+    <hr>
+        <h1>Definición de HTML</h1>
+        El acrónimo HTML, viene del nombre <b>HyperText Markup Language</b>, es decir, significa: Lenguaje de Marcado de Hipertextos.
+        <br>Quiere decir, que las páginas web, son un conjunto de páginas con etiquetas que están vinculadas entre ellas, através
+        <br>hiperenlaces o hipervínculos.
+        <ul>
+            <li>Que la estructura de HTML viene definida por la W3Consortium</li>
+            <li>Pueden aglutinar textos, audios, vídeos, tablas, imágenes, etc. que podemos combinarlos a 
+                <br>nuestro gusto. Además, permite inserta enlaces a otras páginas por medio de los hiperenlaces.
+            </li>
+            <li>HTML es un lenguaje de marcado o de marcas, que está diseñado para la visualización de información.
+                <br>Esta se hace a través de los navegadores web.
+            </li>
+            <li>Para que una página web se considere como tal, tiene que tener una extension que sea <b>.html</b>
+                <br>Ejemplo: index.html 
+            </li>
+        </ul>
+        <hr>
+        <h1>¿Qué sucede cuando visitamos una página web?</h1>
+        <img src="img/introweb.jpg" width="450px" height="300px">
+        <hr>
+        <h1>Estructura o tags en HTML</h1>
+        Las etiquetas en HTML, se escriben de la siguiente manera:
+        <ul>
+            <li>Se escriben entre desigualdades, suelen ir en parejas, y rodeando el texto al que aplica.</li>
+            <li>Tiene una etiqueta de principio y una de fin.</li>
+            <li>La parte de apertura contiene como mínimo el nombre de la marca, y el de cierre, empieza con
+                <br>el caracter de la / y seguido del nombre de la marca.
+            </li>
+        </ul>
+        <img src="img/etiquetas.jpg" width="450px" height="300px">
+        <br>En HTML, podemos encontrarnos con etiquetas especiales que sólo tienen etiqueta de apertura.
+        <br>Es lo que se conoce como monoetiquetas.
+        <br>Eje: img, hr, br, etc.
+        <br>Las etiquetas, ya tengan etiqueta de apertura y de cierre o sean monoetiquetas, pueden tener <b>atributos</b>
+        <br>Los atributos son cualidades que se facilitan a las etiquetas para dotarles de una serie de características concretas.
+        <hr>
+        <h1>Estructura de una página web y comentarios</h1>
+        <h2>Comentarios en HTML</h2>
+            Los comentarios en HTML, o en CSS, se utilizan para dar información al programdxr/a con el fin de informar
+            <br>de las cosas que vamos haciendo.
+            <br>Los comentarios deben ser claros, sencillos y concisos.
+            <br>Los comentarios NO van a aparecer en el navegador, sino que queda de manera interna
+            Para poder poner comentarios en HTML, utilizaremos la siguiente sintaxis:
+            <ul>
+                <li>Comenzaremos con el símbolo de menor qué "<" seguido de "!" y de "--"</li>
+                <li>Introduciremos el texto con el mensaje a comentar</li>
+                <li>Cerraremos con la estructura "--" segudio de ">"</li>
+            </ul>
+                <!-- Esto es un comentario en HTML. -->
+        <h2>Estructura de un documento HTML</h2>
+        <ul>
+            <li>Los documentos html están divididos en dos grandes zonas o principales.</li>
+            <li>
+                <b>head</b>: Es la cabecera de nuestra página web.En ella, podemos insertar o "almacenar", todo lo
+                <br>relacionado con título de la pestaña de la página web, favicom (icono de la pestaña), los links de 
+                <br>CSS y JS (JavaScript) externos, CSS interno, metadatos, idioma, entre otros elementos.
+            </li>
+            <li>
+                <b>body</b>: Se introduce TODO el contenido que queremos mostrar en nuestra página web. Imágenes, textos,
+                <br>tablas, vídeos, audios, etc.
+            </li>
+        </ul>
+        <img src="img/estructura.jpg" width="450px" height="300px">
+        <br>
+        <img src="img/estructura2.jpg" width="450px" height="300px">
+        <hr>
+        <h1>Títulos en HTML</h1>
+        En HTML, podemos establecer o usar 6 niveles de títulos.Los títulos van estructurados desde el H1 hasta el 
+        <br>H6, siendo el H1 el más grande y el H6 el de menor tamaño.
+        <h1>Este es un título de nivel 1 o tamaño h1</h1>
+        <h2>Este es un título de nivel 2 o tamaño h2</h2>
+        <h3>Este es un título de nivel 3 o tamaño h3</h3>
+        <h4>Este es un título de nivel 4 o tamaño h4</h4>
+        <h5>Este es un título de nivel 5 o tamaño h5</h5>
+        <h6>Este es un título de nivel 6 o tamaño h6</h6>
+        <hr>
+        <h1>Insertar textos en HTML</h1>
+        Para poder insertar textos en HTML, podemos hacerlo de las siguientes maneras:
+        <br>
+        <ul>
+            <li>Escribiendo directamente dentro de las etiquetas de apertura y cierre del body</li>
+            <li>Podemos utilizar saltos de párrafo. Para ello utilizaremos la etiqueta p</li>
+            <li>Podemos usar saltos de línea</li>
+                Ejemplo de salto de línea (br) y salto de párrafo
+            </br>Esto es un ejemplo de salto de línea en HTML
+            <p>Esto es un ejemplo de salto de párrafo o párrafo en HTML</p>
+        </ul>
+        A parte de poder insertar texto en nuestro HTML, podemos utilizar un elemento de separación para establecer
+        <br>espacios o secciones dentro de un documento que facilite su visualización.
+        <br>Este elemento en cuestión, es conocido como hr.
+        <br>hr es una monoetiqueta que representa una línea horizontal de separación entre secciones o partes de un 
+        <br>documento html.
+        <br>Para poder modificar o "customizar" la etiqueta hr, podemos utilizar los atributos size (tamaño de grosor),
+        <br>anchura (width) y color.
+        <br>Esto es una sección de un texto en HTML
+        <hr color="#ffda33" width="50%" size="12px" align="right">
+            Esta es otra sección de un texto en html
+        <hr>
+        <h1>Textos Preformateados</h1>
+        Los textos preformateados, son textos que podemos insertar en HTML con las características que nosotros queramos.
+        <br>Es decir, podemos escribir el texto de manera que se visualice tal y como lo hemos escrito en el body.
+        <pre>
+            Hola                    esto            es         un             
+                    texto                   preformateado
+                                en                              HTML
+        </pre>
+        <pre>
+            <code>
+                function diHola() {
+                    console.log("Hola alumnxs de DAM/DAW UNIR");
+                    alert("Bienvenidxs a la materia de LMSGE");
+                }
+            </code>
+        </pre>
+        <hr>
+        <h1>Formatos de Textos</h1>
+        <ul>
+            <li>Etiqueta b: sirve para poner texto en <b>negrita</b></li>
+            <li>Etiqueta i: sirve para poner texto en <i>cursiva</i></li>
+            <li>Etiqueta del: sirve para poner un texto <del>tachado</del></li>
+            <li>Etiqueta em: similar a cursiva, pero para dar <em>énfasis</em></li>
+            <li>Etiqueta small: es para poner texto <small>en pequeño</small></li>
+            <li>Etiqueta sup: Es una etiqueta de superíndice. Ejemplo x<sup>2</sup></li>
+            <li>Etiqueta sub: Es una etiqueta de subíndice. Ejemplo H<sub>2</sub>O</li></li>
+            <li>Etiqueta mark: <mark>Es para subrayar un texto</mark></li>
+            <li>Etiqueta q: sirve para poner <q>citas pequeñas</q> de texto</li>
+            <li>Etiqeta cite: sirve para poner <cite>Titulos de trabajos</cite></li>
+            <li>Etiqueta address: Sirve para poner una dirección. <address>Calle Madrid 22</address></li>
+        </ul>
+        <hr>
+        <h1 align="center">Etiquetas que ya no se utilizan en HTML5</h1>
+            Con la HTML5, algunas etiquetas que hasta entonces utilizabamos para poder dar apariencia y formato en HTML, pues quedan en deshuso.
+            <br>A partir de ahora, todo aquello que vaya relacionado con apariencia (color, tipografías, tamaños, etc.) lo haremos con
+            <br>etiquetas y reglas/normas establecidas en CSS.
+            <br>Para poder cambiar tamaños, colores y tipografías en HTML, utilizábamos la etiqueta <b>font</b>
+            <br>A parte de la etiqueta de apertura y cierre font, utilizábamos, unos atributos que son los siguientes:
+            <ul align="center">
+                <li><b>face</b>: sirve para cambiar de tipografía (Arial, ComicSans, Verdana, etc)</li>
+                <li><b>color</b>: se utiliza para poder asignar un color en HTML</li>
+                <li><b>size</b>: sirve para dar un tamaño a una tipografía o letra</li>
+            </ul>
+            <br><font color="blue" size="25px" face="Verdana">Este es un ejemplo de tamaño, color y tipografía en HTML</font>
+            <br>Para poder realizar una alineación de texto en HTML, siempre tendremos que vincularlo a un salto de párrafo.
+            <p align="left">Esto es un texto alineado a la izquierda</p>
+            <p align="center">Esto es un texto alineado a la centro</p>
+            <p align="right">Esto es un texto alineado a la derecha</p>
+            <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quo, accusantium amet corrupti iure magni quod totam vel quaerat doloremque ullam possimus. Necessitatibus id fugiat eius, veritatis repudiandae expedita eos?
+            Nisi ab commodi porro cum aliquam accusantium iusto nemo dolore id nihil ut deleniti fuga, officiis vero fugiat reiciendis rerum eius ex, delectus distinctio facere beatae explicabo quod! Blanditiis, perspiciatis.
+            Eaque animi error alias ad quam in enim accusantium ex. Rerum optio itaque, ratione repellat excepturi repellendus ab quia dignissimos esse maxime dolores consectetur. Exercitationem enim consequuntur nemo quasi fugiat.
+            Harum sunt doloremque eius odio? Nesciunt libero aspernatur distinctio esse recusandae laborum? Impedit, quidem? Aliquid officia totam, tempora non perspiciatis voluptatum pariatur neque dolorum molestiae, nam doloribus ab ea. Officia!</p>
+    </body>
 </html>
