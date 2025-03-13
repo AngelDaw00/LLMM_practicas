@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapeado en HTML</title>
+</head>
+<body>
+    <h1>Mapeado en HTML</h1>
+    El mapeado en HTML, consiste en establecer una zona o regíon de una foto, con el fin de que cuando vayamos a pinchar
+    <br> en dicha región, nos conduzca a un documento, página web, etc. que nosotros queramos.
+    La estructura y elemetos de los que va a estar formados un mapeado en HTML, son los siguientes:
+    <ul>
+        <li><b>img</b>: lo vamos a usar para insertar la imagen que queremos mapear</li>
+        <li><b>usemap</b>: indicar un nombre del mapeado de la imagen que queremos realizar. Va a ir asociado a #</li>
+        <li><b>map</b>: establece que vamos a usar un mapeado y que el nombre es el que vamos a vincular del usemap</li>
+        <li><b>area</b>: es la etiqueta que nos va a permitir establecer la zona de mapeado de nuestra imagen</li>
+        <li><b>shape</b>: establece el tipo de mapeado que queremos realizar.
+            <ul>
+                <li>default: establece la zona de mapeado como la de TODA la imagen. Mapeado por defecto.</li>
+                <li>rect: establece un área de mapeado en donde tenemos un punto X1Y1 que se coge de la 
+                    <br>esquina superior izquierda de la imagen, y un punto X2Y2 de la esquina inferior derecha.
+                </li>
+                <li>circle: establece un mapeado circular en donde tenemos un punto X1Y1 y un valor de radio</li>
+                <li>poly: establece un mapeado en donde como mínimo tenemos que tener tres puntos o coordenadas 
+                    <br>para su definición. Las coordenadas en este caso, se establecen siguiendo el sentido
+                    <br>de las agujas del reloj
+                </li>
+            </ul>
+        </li>
+        <li><b>coords</b>: son las coordenadas de los puntos establecidos.</li>
+    </ul>
+    <br>
+    <img src="img/capi.jpg" usemap="#marvel">
+    <map name="marvel">
+        <area shape="rect" coords="0,1,403,821" href="https://estudiarfp.unir.net/" target="_blank">
+        <area shape="circle" coords="527,192,69" href="https://www.marvel.com/" target="_blank">
+        <area shape="poly" coords="524,333,546,317,545,353,529,363" href="https://www.20minutos.es/" target="_blank">
+    </map>
+    <hr>
+    <h2>Insertar video y audio en páginas HTML5</h2>
+    Para poder insertar vídeos y audios en documentos HTML, utilizaremos las etiquetas video y audio disponibles desde la normativa
+    <br>HTML5.
+    <br>A parte de poder utilizar las etiqutas audio y video para insertar este tipo de contenido multimedia en nuestras webs,
+    <br>también podemos insertar contenido audiovisual disponible en webs de terceros (p.e. Youtube o Vimeo), en donde el procedimiento
+    <br>es distinto al comentado, puesto que utilizaremos una etiqueta llamada "iframe" que lo que hará será insertar este tipo de
+    <br>contenido en nuestras páginas.
+    <h3>Vídeo Insertado desde la plataforma de Youtube</h3>
+    <br>
+    <iframe width="500px" height="300px" src="https://www.youtube.com/embed/JaMfv5zDYa0"  poster="img/marvel.jpg" title="Instalación Apache Web Server en Ubuntu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <video src="multimedia/musica.mp4" controls poster="img/marvel.jpg" width="500px" height="200px"></video>
+    <br>
+    <audio src="multimedia/utomp3.com - JOHN WICK BALLERINA Trailer 4K ULTRA HD NEW 2025.mp3" controls></audio>
+    <br>
+    <h4>Propiedades que podemos usar con las etiquetas video y audio</h4>
+    <ul>
+        <li>src: definir la URL del vídeo o audio que queremos insertar</li>
+        <li>preload: es un elemento usado para audio y vídeo con el fin de almacenar archivos de gran tamaño
+            <br> temporalmente (buffering). Dentro de esta opción, podeis usar: none, auto, metadata (almacenamiento de información)
+        </li>
+        <li>mediagroup: se utilizaba, para agrupar archivos multimedia de distintos formatos, con el fin de que dependiendo
+            <br>del formato soportado por el navegador, se pudiera reproducir uno u otro formato.
+        </li>
+        <li>autoplay: reproducir al inicio</li>
+        <li>loop: reproducción en modo bucle (infinito)</li>
+        <li>muted: silenciar</li>
+        <li>controls: para tener los contoroles del reproductor. Sin ellos, no podemos reproducir los archivos</li>
+        <li>width y height: para dar un tamaño al video</li>
+        <li>poster: para "poner" una foto en el vídeo de nuestro servidor, antes de que le demos a reproducir.</li>
+    </ul>
+</body>
+</html>
