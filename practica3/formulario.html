@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practica 2</title>
+    <link rel="stylesheet" href="/practica3/estilos.css">
+    <link rel="icon" href="/practica3/img/icon.png">
+</head>
+<body class="bodyform">
+    <form action="mailto:angel@gmail.com" autocomplete="on" class="formulario" method="post" enctype="text/plain">
+        <h1 class="tituloform">Breaking Bad - Que comience el juego!</h1>
+            <fieldset>
+                <legend>Información Personal</legend>
+                    <label for="nombre">Nombre</label>
+                        <input type="text">
+                    <label for="apellidos">Apellidos</label>
+                        <input type="text">
+                    <label for="direccion">Dirección</label>
+                        <input type="text" placeholder="Calle, Número, Piso">
+                    <label for="ciudad">Ciudad</label>
+                        <input type="text">
+                    <label for="DNI">DNI</label>
+                        <input type="text"><br>
+                    <label for="correo">Correo electrónico</label>
+                        <input type="email">
+                    <label>Sexo</label>
+                        <input type="radio" id="hombre" name="sexo" value="hombre">
+                            <label for="hombre">Hombre</label>
+                        <input type="radio" id="mujer" name="sexo" value="mujer">
+                            <label for="mujer">Mujer</label>
+                    <label for="Fecha nacimiento">Fecha de nacimiento</label>
+                        <input type="date">
+            </fieldset>
+            <fieldset>
+                <legend>Preferencias</legend>
+                    <label>Personaje favorito</label>
+                    <select name="personaje favorito">
+                        <option value="blanco">Elige una opción</option>
+                        <option value="jessie">Jessie Pinkman</option>
+                        <option value="walter">Walter White</option>
+                        <option value="saul">Saul Goodman</option>
+                        <option value="gustavo">Gustavo Fring</option>
+                    </select>
+                    <label for="comentarios">Comentarios</label>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe tu comentario..."></textarea>
+            </fieldset>
+               <label for="file">Adjuntar archivo</label>
+                    <input type="file"><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>

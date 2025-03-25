@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+/*Fuente*/
+@font-face {
+    font-family: "Breaking_Bad";
+    src: url("../practica3/Breaking\ Bad.ttf") format("truetype");
+    font-weight: normal !important;
+    font-style: normal !important;
+}
+
+/*Resto del css*/
+html, body {
+    height: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+
+/*Index.html*/
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.bg-image {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-family: "Breaking_Bad";
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    word-break: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5%;
+    text-shadow: 0 0 10px #272321;
+    font-size: 3em;
+    margin-top: 20px;
+    background-image: url(/practica3/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    line-height: 1.5;
+}
+
+.poster {
+    width: 700px;
+    height: 300px;
+    border: 10px;
+    border-style: outset;
+    border-color: brown;
+    border-radius: 22px;
+    margin-top: 20px;
+}
+
+/*Formulario.html*/
+form {
+    margin: 3% 3% 3% 3%;
+}
+
+fieldset {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.bodyform {
+    background-color: bisque;
+}
+
+/*Tabla.html*/
+
+.bodytabla {
+    background-color: #0c3e11;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo {
+    margin-top: 90px;
+    margin-bottom: 70px;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+}
+
+.br, .ba {
+    background-color: #7fdd05;
+    color: black;
+    padding: 0.7rem;
+}
+
+.tabla_subheader {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    margin-left: 140px;
+}
+
+.tabla_subheader p {
+    color: #a80000;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    margin-left: 0.2rem;
+}
+
+.tabla1 {
+    background-color: black;
+    width: 900px;
+    height: 700px;
+}
+
+.tabla2 {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    background-color: black;
+    width: 400px;
+    height: 250px;
+}
+
+.tabla2 td {
+    color: black;
+    background-color: #c2c72a;
+}
+
+tr, td {
+    color: black;
+    text-align: center;
+    border: 4px solid #000;
+}
+
+.verdeclaro {
+    background-color: #b7d91e;
+}
+
+.verdeoscuro {
+    background-color: #558811;
+}
+
+.verdeclarito {
+    background-color: #d4e87d;
+}
+
+.gris {
+    background-color: gray;
+}
+
+.verdemarron {
+    background-color: #828c56;
+}
+
+.morau {
+    background-color: plum;
+}
+
+table p {
+    font-size: 2em;
+    font-weight: 700;
+}

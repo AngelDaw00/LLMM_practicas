@@ -1,0 +1,157 @@
+
+body {
+    font-size: 16px;
+  }
+  .color-texto {
+    color: rgb(123, 123, 123);
+    color: darkred;
+    color: rgba(0,0,0, 0.2);
+    color: #ff5500aa;
+    color: #f50a;
+  }
+  body {
+    /* background-color: red; */
+  }
+  .color-fondo {
+    background-color: rgba(0,0,0, 0.2);
+  }
+  
+  .color-borde {
+    width: 300px;
+    height: 300px;
+    color: crimson;
+    border: 10px dotted green;
+    border-top-color: blue;
+    border-style: solid ;
+    
+    border-radius: 0% 30% 50% 80%;
+    border-radius: 50%;
+  }
+  
+  /* unidades en CSS */
+  
+  .pulgadas {
+    font-size: 1in;
+  }
+  .centimetros {
+    font-size: 1cm;
+  }
+  .picas {
+    font-size: 1pc;
+  }
+  .milimetros {
+    font-size: 1mm;
+  }
+  .puntos {
+    font-size: 1pt;
+  }
+  
+  /* Unidades relativas */
+  
+  .unidades-relativas{
+    font-size: 28px;  
+  }
+  
+  .em {
+    font-size: 2em;
+  }
+  .ex {
+    font-size: 1ex;
+  }
+  .rem {
+    font-size: 1rem;
+  }
+  .ch {
+    font-size: 1ch;
+  }
+  .px {
+    font-size: 1px;
+  }
+  .porcentaje {
+    font-size: 200%;
+  }
+  
+  .dimensiones {
+    width: 30rem;
+    height: 50px;
+    /* px; %; em; rem */
+  }
+  
+  .viewport-unidades{
+    background-color: chocolate;
+    width: 100vw;
+  }
+  
+  /* Modelo de caja */
+  .caja-fuera {
+  }
+  
+  #caja-dentro-1 {
+      margin: 1rem;
+      padding: 1rem;
+      border: 1px solid black;
+  }
+  
+  #caja-dentro-2 {
+  }
+  
+  /* Overflow */
+  
+  .rebosado {
+      width: 100px;
+      height: 100px;
+      overflow: auto;
+      overflow: scroll;
+      overflow: visible;
+      overflow: hidden;
+  }
+  
+  
+  /* Zonas */
+  .zonas{
+      width: 200px;
+      height: 200px;
+  }
+  
+  .zonas-dentro {
+      background-color:tomato;
+      width: 100px;
+      height: 100px;
+      margin-top: 5px;
+      margin-right: 5px;
+      margin-bottom: auto;
+      margin-left: auto;
+      
+      padding-top: 5px;
+      padding-right: 5px;
+      padding-bottom: auto;
+      padding-left: auto;
+  }
+  
+  .zonas-mas-dentro{
+      background-color:blueviolet;
+      width: 50px;
+      height: 50px;
+      margin-top: 5px;
+      margin-right: 5px;
+      margin-bottom: auto;
+      margin-left: auto;
+      
+      padding-top: 5px;
+      padding-right: 5px;
+      padding-bottom: auto;
+      padding-left: auto;
+  }
+  
+  /* Centrado de elementos */
+  .centrado-contenedor {
+      background-color:yellowgreen;
+      padding: 1rem;
+  }
+  
+  .centrado-contenido {
+      display: block;  /* las imágenes no se comportan como bloques */
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+  }
